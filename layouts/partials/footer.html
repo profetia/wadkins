@@ -1,0 +1,39 @@
+<!-- footer -->
+<footer class="footer" style="padding-top: 4rem; padding-bottom: 2rem">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <span class="copyright">Website format from <a href="http://www.ericwadkins.com/">Eric Wadkins</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top js-scroll-trigger" href="index.html#">
+    <i class="fa fa-angle-up"></i>
+</a>
+
+<!-- Bootstrap core JavaScript -->
+{{ $js := resources.Get "vendor/jquery/jquery.min.js" | resources.Fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+
+{{ $js := resources.Get "vendor/bootstrap/js/bootstrap.bundle.min.js" | resources.Fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+
+<!-- Plugin JavaScript -->
+{{ $js := resources.Get "vendor/jquery-easing/jquery.easing.min.js" | resources.Fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+
+<!-- Contact form JavaScript -->
+{{ $js := resources.Get "js/jqBootstrapValidation.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+
+{{ $js := resources.Get "js/contact_me.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+
+<!-- Custom scripts -->
+<!--<script src="js/stylish-portfolio.js"></script>-->
+{{ $js := resources.Get "js/agency.js" | resources.Minify | resources.Fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>

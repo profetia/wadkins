@@ -1,0 +1,24 @@
+name = 'wadkins'
+license = 'MIT'
+licenselink = 'https://github.com/profetia/wadkins/LICENSE'
+description = "A clean, responsive theme for Hugo, ported from Eric Wadkins's portfolio site."
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/profetia/wadkins'
+
+# If you have a running demo of the theme
+demosite = 'https://profetia.github.io/wadkins'
+
+# Taxonomy terms
+tags = ["personal", "portfolio", "responsive", "clean", "single page"]
+features = ["Clean", "Responsive", "Portfolio"]
+
+# If the theme has a single author
+[author]
+name = 'Linshu Yang'
+homepage = 'profetia.github.io'
+
+# If porting an existing theme
+[original]
+author = 'Eric Wadkins'
+homepage = 'http://www.ericwadkins.com/'
